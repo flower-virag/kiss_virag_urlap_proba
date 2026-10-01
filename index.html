@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="űrlap">
+    <meta name="keywords" content="űrlap kialakítás">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kiss Virág</title>
+</head>
+<body>
+    <header>
+        <h1>Űrlap</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Menü</a>
+            </li>
+            <li>
+                <a href="index.html">Menü</a>
+            </li>
+            <li>
+                <a href="index.html">Menü</a>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+            
+                <div class="nev">
+                    <label for="nev">Név:</label>
+                    <input type="text" id="nev" name="nev" placeholder="Vezetéknév / Keresztnév">
+                </div>
+
+
+                <div class="psw">
+                    <label for="psw">Jelszó:</label>
+                    <input type="password" name="psw" id="psw">
+                </div>
+
+
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nem</legend>
+                <div>
+                    <input type="radio" id="no" name="nem" value="no">
+                    <label for="no">Nő</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="ferfi" name="nem" value="ferfi">
+                    <label for="ferfi">Férfi</label>
+                </div>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Hobbi - többet is kiválaszthatsz</legend>
+                <div>
+                    <input type="checkbox" name="hobbi" value="foci"> Foci
+                    <input type="checkbox" name="hobbi" value="zene"> Zene
+                    <input type="checkbox" name="hobbi" value="rajz"> Rajz
+                    <input type="checkbox" name="hobbi" value="fotozas"> Fotózás
+                    <input type="checkbox" name="hobbi" value="biciklizes"> Biciklizés
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ország</legend>
+                <div>
+                    <label for="orszag">Válassz országot:</label>
+
+                    <select id="orszag" name="orszag">
+                        <option value="magyar">Magyarország</option>
+                        <option value="ausztria">Ausztria</option>
+                        <option value="nemet">Németország</option>
+                        <option value="olasz">Olaszország</option>
+                        <option value="spanyol">Spanyolország</option>
+                        <option value="orosz">Oroszország</option>
+                        <option value="ukran">Ukrajna</option>
+                        <option value="roman">Románia</option>
+                        <option value="szlovak">Szlovákia</option>
+                        <option value="egyeb">Egyéb</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="submit">
+                <input type="submit" value="Küldés">
+            </div>
+        </form>
+    </article>
+</body>
+</html>
